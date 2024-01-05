@@ -1,0 +1,163 @@
+body {
+  background-color: #333;
+}
+
+.wrapper {
+  display: flex;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.run {
+  height: 190px;
+  width: calc(1848px / 8);
+
+  background: url("../public/images/Run.png");
+  background-size: 1848px 190px;
+  animation: run 0.5s steps(8) infinite;
+}
+
+@keyframes run {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1848px 0;
+  }
+}
+
+.idle {
+  height: 190px;
+  width: calc(1386px / 6);
+
+  background: url("../public/images/Idle.png");
+  background-size: 1386px 190px;
+  animation: idle 0.5s steps(6) infinite;
+}
+
+@keyframes idle {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1386px 0;
+  }
+}
+
+.jump {
+  height: 190px;
+  width: calc(462px / 2);
+
+  background: url("../public/images/Jump.png");
+  background-size: 462px 190px;
+  animation: jump 0.5s steps(2) infinite;
+}
+
+@keyframes jump {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -462px 0;
+  }
+}
+
+.attack1 {
+  height: 190px;
+  width: calc(1848px / 8);
+
+  background: url("../public/images/Attack1.png");
+  background-size: 1848px 190px;
+  animation: attack1 0.5s steps(8) infinite;
+}
+
+@keyframes attack1 {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1848px 0;
+  }
+}
+
+.attack2 {
+  height: 190px;
+  width: calc(1848px / 8);
+
+  background: url("../public/images/Attack2.png");
+  background-size: 1848px 190px;
+  animation: attack2 0.5s steps(8) infinite;
+}
+
+@keyframes attack2 {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1848px 0;
+  }
+}
+
+.hit {
+  height: 190px;
+  width: calc(924px / 4);
+
+  background: url("../public/images/Hit.png");
+  background-size: 924px 190px;
+  animation: hit 0.5s steps(4) infinite;
+}
+
+@keyframes hit {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -924px 0;
+  }
+}
+
+.death {
+  height: 190px;
+  width: calc(1617px / 7);
+
+  background: url("../public/images/Death.png");
+  background-size: 1617px 190px;
+  animation: death 0.5s steps(7) infinite;
+}
+
+@keyframes death {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -1617px 0;
+  }
+}
+
+.fall {
+  height: 190px;
+  width: calc(462px / 2);
+
+  background: url("../public/images/Fall.png");
+  background-size: 462px 190px;
+  animation: fall 0.5s steps(2) infinite;
+}
+
+@keyframes fall {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -462px 0;
+  }
+}
